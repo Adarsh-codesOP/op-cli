@@ -1,0 +1,8 @@
+/target
+/op/target
+**/*.rs.bk
+*.pdb
+*.exe
+*.nupkg
+.DS_Store
+packaging/chocolatey/tools/*.exe

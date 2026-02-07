@@ -1,0 +1,6 @@
+   Compiling binrw_derive v0.15.0
+   Compiling chrono v0.4.43
+   Compiling winstructs v0.3.2
+error: failed to remove C:\Users\adars\Desktop\Project\op-cli\op\target\debug\deps\binrw_derive-55c421b893e81777.binrw_derive.d9294da8c9fefb75-cgu.09.rcgu.o: The process cannot access the file because it is being used by another process. (os error 32)
+
+error: could not compile `binrw_derive` (lib) due to 1 previous error
