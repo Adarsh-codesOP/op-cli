@@ -6,3 +6,4 @@
 *.nupkg
 .DS_Store
 packaging/chocolatey/tools/*.exe
+PUBLISHING.md
