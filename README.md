@@ -51,9 +51,9 @@ cargo build --release
 Launch anything by typing the closest match to its name.
 
 ```powershell
-op chro   # Opens Chrome
-op code   # Opens VS Code
-op spot   # Opens Spotify
+opn chro   # Opens Chrome
+opn code   # Opens VS Code
+opn spot   # Opens Spotify
 
 ```
 
@@ -62,7 +62,7 @@ op spot   # Opens Spotify
 If a query is ambiguous, use the `--select` (or `-s`) flag to pick your favorite. `opn` will remember this choice for next time.
 
 ```powershell
-op code -s
+opn code -s
 
 ```
 
