@@ -1,0 +1,13 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that the package's contents are original and safe.
+
+1. Download the installer/archive from the official source.
+   - https://github.com/Adarsh-codesOP/opn-cli/releases/download/v0.1.0/opn.exe
+   - https://github.com/Adarsh-codesOP/opn-cli/archive/refs/tags/v0.1.0.zip
+   - https://github.com/Adarsh-codesOP/opn-cli/archive/refs/tags/v0.1.0.tar.gz
+
+2. Verify the hash matches.
+   - File: opn.exe
+   - Algorithm: SHA256
+   - Checksum: 60403966c675ea7738a46631c0f8fc1230a8c1fdc409479faa3776baed933eac

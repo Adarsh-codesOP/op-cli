@@ -1,0 +1,9 @@
+{
+    "version": "0.1.0",
+    "description": "Lightweight Windows Application Launcher",
+    "homepage": "https://github.com/Adarsh-codesOP/op-cli",
+    "license": "MIT",
+    "url": "https://github.com/Adarsh-codesOP/op-cli/releases/download/v0.1.0/op.exe",
+    "hash": "60403966C675EA7738A46631C0F8FC1230A8C1FDC409479FAA3776BAED933E",
+    "bin": "op.exe"
+}

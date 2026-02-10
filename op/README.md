@@ -1,43 +1,48 @@
-# op - Lightweight Windows Application Launcher
+# opn - Lightweight Windows Application Launcher
 
-`op` is a high-performance, fuzzy-matching CLI application launcher for Windows. It is designed to be:
+`opn` is a high-performance, fuzzy-matching CLI application launcher for Windows. It is designed to be:
 - **Fast**: Written in Rust, with instant startup and execution.
 - **Smart**: Learns your preferences over time.
 - **Minimal**: Zero background services, single binary.
 
 ## 🚀 Features
 - **Fuzzy Search**: Find apps even with partial or typo-filled queries (`code` -> `Visual Studio Code`).
-- **Learning**: Remembers your choices. If you select `Visual Studio Code` for `code`, `op code` will launch it instantly next time.
+- **Learning**: Remembers your choices. If you select `Visual Studio Code` for `code`, `opn code` will launch it instantly next time.
 - **Offline**: Works entirely local, no internet required.
-- **Portable**: Single `op.exe` binary, no installation required.
+- **Portable**: Single `opn.exe` binary, no installation required.
 
 ## 📦 Installation
+### Chocolatey
+```powershell
+choco install opn
+```
+
 ### Manual
-1. Download `op.exe` from the [Releases](https://github.com/Adarsh-codesOP/op-cli/releases) page.
-2. Place it in a folder included in your system `PATH` (e.g., `C:\Program Files\op\`).
+1. Download `opn.exe` from the [Releases](https://github.com/Adarsh-codesOP/opn-cli/releases) page.
+2. Place it in a folder included in your system `PATH` (e.g., `C:\Program Files\opn\`).
 
 ### From Source
 ```powershell
-git clone https://github.com/Adarsh-codesOP/op-cli
-cd op-cli/op
+git clone https://github.com/Adarsh-codesOP/opn-cli
+cd opn-cli/op
 cargo build --release
-# Binary is at target/release/op.exe
+# Binary is at target/release/opn.exe
 ```
 
 ## 🛠 Usage
 
 ### Launch an App
 ```powershell
-op <query>
+opn <query>
 # Example:
-op chro   # Launches Google Chrome
-op code   # Launches Visual Studio Code
+opn chro   # Launches Google Chrome
+opn code   # Launches Visual Studio Code
 ```
 
 ### Interactive Selection
-If multiple apps match or you want to teach `op`, use `-s` or `--select`:
+If multiple apps match or you want to teach `opn`, use `-s` or `--select`:
 ```powershell
-op code -s
+opn code -s
 ```
 Output:
 ```
@@ -46,16 +51,16 @@ Select an application for 'code':
 [2] CodeWriter (C:\...)
 > 1
 ```
-`op` will remember that `code` means `Visual Studio Code`. Next time `op code` will launch it directly.
+`opn` will remember that `code` means `Visual Studio Code`. Next time `opn code` will launch it directly.
 
 ## ⚙️ Configuration & Reset
-Preferences are stored in `%LOCALAPPDATA%\op\preferences.json`.
-Cache is stored in `%LOCALAPPDATA%\op\cache.json`.
+Preferences are stored in `%LOCALAPPDATA%\opn\preferences.json`.
+Cache is stored in `%LOCALAPPDATA%\opn\cache.json`.
 
 To reset learning or force a re-scan:
 ```powershell
 # Delete the data directory
-Remove-Item -Recurse -Force "$env:LOCALAPPDATA\op"
+Remove-Item -Recurse -Force "$env:LOCALAPPDATA\opn"
 ```
 The next run will automatically rebuild the cache.
 

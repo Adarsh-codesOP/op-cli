@@ -10,11 +10,11 @@ if ($LASTEXITCODE -ne 0) {
     Write-Error "Build failed."
 }
 
-$exePath = "$opDir\target\release\op.exe"
+$exePath = "$opDir\target\release\opn.exe"
 $toolsDir = "$scriptDir\tools"
 
-Write-Host "Copying op.exe to tools directory..." -ForegroundColor Cyan
-Copy-Item -Path $exePath -Destination $toolsDir -Force
+Write-Host "Copying opn.exe to tools directory..." -ForegroundColor Cyan
+Copy-Item -Path $exePath -Destination "$toolsDir\opn.exe" -Force
 
 Set-Location $scriptDir
 

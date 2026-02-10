@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>opn</id>
+    <version>0.1.0</version>
+    <title>opn (Application Launcher)</title>
+    <authors>Adarsh</authors>
+    <owners>Adarsh</owners>
+    <projectUrl>https://github.com/Adarsh-codesOP/opn-cli</projectUrl>
+    <packageSourceUrl>https://github.com/Adarsh-codesOP/opn-cli/tree/main/packaging/chocolatey</packageSourceUrl>
+    <docsUrl>https://github.com/Adarsh-codesOP/opn-cli/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Adarsh-codesOP/opn-cli/issues</bugTrackerUrl>
+    <tags>opn launcher cli productivity</tags>
+    <summary>A fast, fuzzy-matching application launcher for Windows. Run 'opn' to search and launch apps.</summary>
+    <licenseUrl>https://github.com/Adarsh-codesOP/opn-cli/blob/main/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/Adarsh-codesOP/opn-cli/releases</releaseNotes>
+    <description>
+      opn is a lightweight CLI utility that finds and launches applications instantly.
+      After installation, use the 'opn' command to search and launch apps.
+      
+      Features:
+      - Fuzzy search (type 'code' to open 'Visual Studio Code')
+      - Learning (remembers your past choices)
+      - Offline (no internet required)
+      - Single binary (no dependencies)
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
